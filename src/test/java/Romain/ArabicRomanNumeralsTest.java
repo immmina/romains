@@ -65,6 +65,44 @@ public class ArabicRomanNumeralsTest {
         // then
         assertEquals(expectedRomain, actualRomain, "Test for 6 failed!");
     }
+    @Test
+    void romains11() {
+        // given
+        List<String> expectedRomain = new ArrayList<String>();
+        expectedRomain.add("X");
+        expectedRomain.add("I");
+        // when
+        List<String> actualRomain = ArabicRomanNumerals.convert(11);
+        // then
+        assertEquals(expectedRomain, actualRomain, "Test for 11 failed!");
+    }
+    @Test
+    void romains23() {
+        // given
+        List<String> expectedRomain = new ArrayList<String>();
+        expectedRomain.add("X");
+        expectedRomain.add("X");
+        expectedRomain.add("III");
+        // when
+        List<String> actualRomain = ArabicRomanNumerals.convert(23);
+        // then
+        assertEquals(expectedRomain, actualRomain, "Test for 23 failed!");
+    }
+    @Test
+    void romains39() {
+        // given
+        List<String> expectedRomain = new ArrayList<>();
+        expectedRomain.add("X");
+        expectedRomain.add("X");
+        expectedRomain.add("X");
+        expectedRomain.add("I");
+        expectedRomain.add("X");
+        // when
+        List<String> actualRomain = ArabicRomanNumerals.convert(39);
+        // then
+        assertEquals(expectedRomain, actualRomain, "Test for 39 failed!");
+    }
+
 /*
     @Test
     void testConvert() {
